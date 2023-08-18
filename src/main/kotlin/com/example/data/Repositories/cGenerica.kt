@@ -49,5 +49,12 @@ class cGenerica <T>{
         }
     }
 
-
+    fun gBuscar(obj: T, valor: String): Any{
+        return when(obj) {
+            is usuariosRep -> {
+                obj.buscarPorCorreo(valor);
+            }
+            else -> throw IllegalArgumentException("Tipo de objeto no soportado");
+        }
+    }
 }

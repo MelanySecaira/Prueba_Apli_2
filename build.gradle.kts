@@ -38,4 +38,14 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
     implementation("org.postgresql:postgresql:$postgres_version")
+
+    //para MYSQL
+    implementation("mysql:mysql-connector-java:8.0.26")
+
+    //para SQLServer
+    implementation("com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11")
+
+    //para manejar fechas y tiempos
+    implementation("org.jetbrains.exposed:exposed-java-time:$exposed_version")
+
 }
